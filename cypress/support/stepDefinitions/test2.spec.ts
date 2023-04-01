@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
 
 Then(`url powinien byc {string}`, (url : string) =>{

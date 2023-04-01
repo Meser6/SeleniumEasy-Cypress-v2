@@ -18,13 +18,13 @@ export default defineConfig({
         })
       );
       return config;
-    },
+    }, 
     baseUrl: 'https://google.pl',
-    specPattern: 'cypress/e2e/features/**/*.feature', 
+    specPattern: 'cypress/e2e/**/*.feature', 
     watchForFileChanges: true,
     viewportHeight: 1080, 
     viewportWidth: 1920,
     video: false,
     screenshotsFolder: 'cypress/report/screenshots'
-  },
+  }
 })

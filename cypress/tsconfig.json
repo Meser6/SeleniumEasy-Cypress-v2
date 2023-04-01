@@ -2,8 +2,8 @@
     "compilerOptions": {
       "strict": true,
       "module": "commonjs",
-      "target": "es5",
-      "lib": ["es5", "dom"],
+      "target": "ES2015",
+      "lib": ["ES2015", "dom"],
       "types": ["cypress", "node"],
       "moduleResolution": "node"
     },
