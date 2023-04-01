@@ -1,0 +1,23 @@
+{
+  "name": "seleniumeasy-cypress-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "cypress", 
+    "e2e",
+    "testing"
+  ],
+  "author": "Jakub Kaczmarczyk",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0"
+  },
+  "dependencies": {
+    "typescript": "^5.0.3"
+  }
+}
