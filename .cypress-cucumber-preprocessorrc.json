@@ -1,9 +1,20 @@
 {
-    "json": {
-      "enabled": false,
-      "output": "jsonlogs\\log.json"
-    },
-    "stepDefinitions": [
-        "cypress\\e2e\\stepDefinitions\\**\\*.spec.ts"
-    ]   
+  "nonGlobalStepDefinitions": false,
+  "stepDefinitions": [
+    "cypress/e2e/stepDefinitions/**/*.spec.ts"
+  ],
+  "json": {
+    "enabled": false,
+    "output": "cypress/reposrt/report.json",
+    "formatter": "cucumber-json-formatter"
+  },
+  "html": {
+    "enabled": true,
+    "output": "cypress/report/report.html"
+  },
+  "messages": {
+    "enabled": false,
+    "output": "cypress/report/messages.ndjson"
   }
+}
+
