@@ -1,0 +1,8 @@
+node_modules
+
+cypress/downloads
+
+report
+
+cypress.env.json
+

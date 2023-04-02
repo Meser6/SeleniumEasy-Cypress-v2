@@ -1,0 +1,17 @@
+{
+  "nonGlobalStepDefinitions": false,
+  "stepDefinitions": ["cypress/support/stepDefinitions/**/*.spec.ts"],
+  "json": {
+    "enabled": false,
+    "output": "cypress/reposrt/report.json",
+    "formatter": "cucumber-json-formatter"
+  },
+  "html": {
+    "enabled": true,
+    "output": "cypress/report/report.html"
+  },
+  "messages": {
+    "enabled": false,
+    "output": "cypress/report/messages.ndjson"
+  }
+}
