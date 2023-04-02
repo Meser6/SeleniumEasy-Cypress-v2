@@ -1,8 +1,6 @@
 {
   "nonGlobalStepDefinitions": false,
-  "stepDefinitions": [
-    "cypress/support/stepDefinitions/**/*.spec.ts"
-  ],
+  "stepDefinitions": ["cypress/support/stepDefinitions/**/*.spec.ts"],
   "json": {
     "enabled": false,
     "output": "cypress/reposrt/report.json",
@@ -17,4 +15,3 @@
     "output": "cypress/report/messages.ndjson"
   }
 }
-

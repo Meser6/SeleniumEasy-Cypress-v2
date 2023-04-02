@@ -4,7 +4,8 @@ import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-prepro
 import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
 
 export default defineConfig({
-  e2e: { // https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md#example-setup
+  e2e: {
+    // https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md#example-setup
     async setupNodeEvents(
       on: Cypress.PluginEvents,
       config: Cypress.PluginConfigOptions
@@ -12,19 +13,19 @@ export default defineConfig({
       await addCucumberPreprocessorPlugin(on, config);
 
       on(
-        'file:preprocessor',
+        "file:preprocessor",
         createBundler({
           plugins: [createEsbuildPlugin(config)],
         })
       );
       return config;
-    }, 
-    baseUrl: 'https://google.pl',
-    specPattern: 'cypress/e2e/**/*.feature', 
+    },
+    baseUrl: "https://google.pl",
+    specPattern: "cypress/e2e/**/*.feature",
     watchForFileChanges: true,
-    viewportHeight: 1080, 
+    viewportHeight: 1080,
     viewportWidth: 1920,
     video: false,
-    screenshotsFolder: 'cypress/report/screenshots'
-  }
-})
+    screenshotsFolder: "cypress/report/screenshots",
+  },
+});

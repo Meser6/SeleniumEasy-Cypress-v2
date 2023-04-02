@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
-Given("Otwieram strone glowna", () =>{
-  cy.visit('/')
-})
+Given("Otwieram strone glowna", () => {
+  cy.visit("/");
+});
