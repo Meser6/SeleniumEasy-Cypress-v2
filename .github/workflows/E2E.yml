@@ -36,6 +36,6 @@ jobs:
       - name: Use Cypress artifact
         uses: actions/upload-artifact@v3
         with:
-          name: e2e-artifacts--${{ matrix.browser }}
+          name: e2e-artifacts-${{ matrix.browser }}
           path: /home/runner/work/**/report/report.html
         continue-on-error: true
