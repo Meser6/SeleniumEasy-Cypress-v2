@@ -20,7 +20,7 @@ export default defineConfig({
       );
       return config;
     },
-    baseUrl: "https://google.pl",
+    baseUrl: "https://demo.seleniumeasy.com",
     specPattern: "cypress/e2e/**/*.feature",
     watchForFileChanges: true,
     viewportHeight: 1080,
