@@ -1,5 +1,1 @@
-export enum difficult {
-  BASIC = "Basic",
-  INTERMEDIATE = "Intermediate",
-  ADVANCED = "Advanced",
-}
+export type difficults = "Basic" | "Intermediate" | "Advanced";
